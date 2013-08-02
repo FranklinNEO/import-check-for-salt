@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/skin_blue"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/title_back_func"
+            android:text="返回"
+            android:textColor="@color/white" >
+        </Button>
+
+        <TextView
+            style="@style/TitleBarText"
+            android:gravity="center"
+            android:paddingLeft="8dip"
+            android:text="抽检提交" />
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/title_func"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:text="保存"
+            android:textColor="@color/white" >
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/panel"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottombar_bg"
+        android:paddingLeft="4.0dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingBottom="4.0dip"
+            android:paddingLeft="2.0dip"
+            android:paddingRight="4.0dip"
+            android:paddingTop="4.0dip" >
+
+            <ImageButton
+                android:id="@+id/plus_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="#00000000"
+                android:src="@drawable/type_select_btn" >
+            </ImageButton>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="3.0dip"
+            android:layout_marginTop="3.0dip"
+            android:layout_weight="1"
+            android:background="@drawable/mm_edit"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:hint="请输入条码"
+            android:inputType="number"
+            android:maxLength="20"
+            android:singleLine="false" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingBottom="4.0dip"
+            android:paddingLeft="2.0dip"
+            android:paddingRight="4.0dip"
+            android:paddingTop="4.0dip" >
+
+            <Button
+                android:id="@+id/submmit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/panel_btn"
+                android:maxHeight="80.0dip"
+                android:minHeight="41.0dip"
+                android:minWidth="50.0dip"
+                android:text="登记"
+                android:textColor="@color/mm_btn_text"
+                android:textSize="@dimen/LargeTextSize" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/func_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_above="@+id/panel"
+        android:background="@drawable/widget_background"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/scan_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/barscan"
+                android:maxHeight="80.0dip"
+                android:minHeight="41.0dip"
+                android:minWidth="50.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <CheckBox
+                android:id="@+id/unclear_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/checkbox"
+                android:text="  喷码不清"
+                android:textColor="@color/mm_hyper_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <CheckBox
+                android:id="@+id/no_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/checkbox"
+                android:text="  无喷码"
+                android:textColor="@color/mm_hyper_text" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/check_code_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/func_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/title_bar"
+        android:background="@drawable/mm_listitem_normal"
+        android:listSelector="@drawable/mm_listitem_normal" >
+    </ListView>
+
+</RelativeLayout>

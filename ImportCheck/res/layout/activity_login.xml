@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/MMBody"
+        android:background="@drawable/login_bg"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="江苏省食盐产品"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="物流信息管理系统"
+            android:textColor="@color/white_75_transparent"
+            android:textSize="26sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dip"
+            android:background="@drawable/login_input"
+            android:orientation="vertical" >
+
+            <com.redinfo.ui.UserEditCancel
+                android:id="@+id/name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip" >
+            </com.redinfo.ui.UserEditCancel>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5dp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:background="@color/black_20_transparent" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5dp" />
+
+            <com.redinfo.ui.PwdEditCancel
+                android:id="@+id/pwd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip" >
+            </com.redinfo.ui.PwdEditCancel>
+        </LinearLayout>
+
+        <View style="@style/MMLabelSplit" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/remember_user_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dip"
+                android:button="@drawable/login_check"
+                android:text=" 记住用户信息"
+                android:textColor="@color/white"
+                android:textSize="@dimen/Small_TextSize" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="40.0dip"
+                android:layout_weight="1.0" />
+
+            <Button
+                android:id="@+id/LoginButton"
+                style="@style/MMLineActionButton"
+                android:layout_width="90dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="7dip"
+                android:background="@drawable/login_button"
+                android:text="登  录"
+                android:textColor="@color/mm_hyper_text" />
+        </LinearLayout>
+
+        <View style="@style/MMLabelSplit" />
+
+        <View style="@style/MMLabelSplit" />
+    </LinearLayout>
+
+</LinearLayout>

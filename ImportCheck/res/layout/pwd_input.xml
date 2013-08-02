@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/password_et"
+        style="@style/MMEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword" />
+
+    <ImageButton
+        android:id="@+id/pwd_ib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/password_et"
+        android:layout_alignRight="@+id/password_et"
+        android:layout_alignTop="@+id/password_et"
+        android:background="#00000000"
+        android:contentDescription="@string/clear_edit"
+        android:src="@drawable/login_account"
+        android:visibility="gone" />
+
+</RelativeLayout>

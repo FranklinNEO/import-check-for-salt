@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@drawable/skin_blue"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/TitleBarText"
+            android:layout_gravity="center"
+            android:paddingLeft="6dip"
+            android:text="填写信息" />
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/title_func"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:text="下一步"
+            android:textColor="@color/white" >
+        </Button>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dip"
+            android:orientation="vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" >
+
+            <TextView
+                style="@style/UISplit"
+                android:text="生产信息"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/reader_news_multi_header"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dip"
+                        android:text="产品名称 "
+                        android:textColor="@color/lightgrey" />
+
+                    <TextView
+                        android:id="@+id/product_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="5dip" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="20.0dip"
+                    android:layout_height="10.0dip"
+                    android:background="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48.0dip"
+                android:background="@drawable/reader_news_multi_middle"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dip"
+                        android:text="生产企业 "
+                        android:textColor="@color/lightgrey" />
+
+                    <TextView
+                        android:id="@+id/producer_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="5dip" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48.0dip"
+                android:background="@drawable/reader_news_multi_middle"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dip"
+                        android:text="发货日期 "
+                        android:textColor="@color/lightgrey" />
+
+                    <TextView
+                        android:id="@+id/send_date_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="5dip" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/reader_news_multi_bottom"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="20.0dip"
+                    android:layout_height="10.0dip"
+                    android:background="@null" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dip"
+                        android:text="发货箱数 "
+                        android:textColor="@color/lightgrey" />
+
+                    <TextView
+                        android:id="@+id/send_num_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="5dip" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/UISplit"
+                android:text="物流信息"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="63.0dip"
+                android:background="@drawable/reader_news_multi_header"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dip"
+                        android:text="到货日期"
+                        android:textColor="@color/lightgrey" />
+
+                    <EditText
+                        android:id="@+id/date_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="29dip"
+                        android:layout_marginLeft="7.0dip"
+                        android:layout_marginRight="7.0dip"
+                        android:layout_weight="4"
+                        android:background="@drawable/linearlayout_edit"
+                        android:paddingLeft="5.0dip"
+                        android:paddingRight="5.0dip"
+                        android:textSize="@dimen/Small_TextSize" >
+                    </EditText>
+
+                    <Button
+                        android:id="@+id/date_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/date_btn" >
+                    </Button>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="20.0dip"
+                    android:layout_height="6.0dip"
+                    android:background="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48.0dip"
+                android:background="@drawable/reader_news_multi_middle"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dip"
+                        android:text="订货单号"
+                        android:textColor="@color/lightgrey" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7.0dip"
+                        android:layout_marginRight="3.0dip"
+                        android:text="CD"
+                        android:textColor="@color/lightgrey"
+                        android:textSize="14sp" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/order_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:background="@drawable/linearlayout_edit"
+                        android:paddingLeft="5.0dip"
+                        android:paddingRight="5.0dip"
+                        android:paddingTop="3.0dip"
+                        android:textSize="@dimen/Small_TextSize" >
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="66.0dip"
+                android:background="@drawable/reader_news_multi_bottom"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="20.0dip"
+                    android:layout_height="7.0dip"
+                    android:background="@null" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dip"
+                        android:text="发运单号"
+                        android:textColor="@color/lightgrey" />
+
+                    <EditText
+                        android:id="@+id/send_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="29dip"
+                        android:layout_marginLeft="7.0dip"
+                        android:layout_weight="4"
+                        android:background="@drawable/linearlayout_edit"
+                        android:paddingLeft="5.0dip"
+                        android:paddingRight="5.0dip"
+                        android:textSize="@dimen/Small_TextSize" >
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
